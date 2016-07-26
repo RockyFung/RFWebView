@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RFWebViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"RFWebViewDemo";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 200, 50)];
+    [btn setTitle:@"点击跳转" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor grayColor];
+    [btn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+- (void)clickBtn:(UIButton *)btn{
+    RFWebViewController *webVC = [[RFWebViewController alloc]init];
+    webVC.urlString = @"http://www.cocoachina.com";
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

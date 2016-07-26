@@ -15,6 +15,8 @@
 		5C750B121D475F2D00E20D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C750B101D475F2D00E20D84 /* LaunchScreen.storyboard */; };
 		5C750B1D1D475F2D00E20D84 /* RFWebViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C750B1C1D475F2D00E20D84 /* RFWebViewDemoTests.m */; };
 		5C750B281D475F2D00E20D84 /* RFWebViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C750B271D475F2D00E20D84 /* RFWebViewDemoUITests.m */; };
+		5C750B3B1D475FB300E20D84 /* RFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C750B3A1D475FB300E20D84 /* RFWebViewController.m */; };
+		5C750B3D1D476E7B00E20D84 /* shuaxin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C750B3C1D476E7B00E20D84 /* shuaxin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		5C750B231D475F2D00E20D84 /* RFWebViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFWebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C750B271D475F2D00E20D84 /* RFWebViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFWebViewDemoUITests.m; sourceTree = "<group>"; };
 		5C750B291D475F2D00E20D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C750B391D475FB300E20D84 /* RFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWebViewController.h; sourceTree = "<group>"; };
+		5C750B3A1D475FB300E20D84 /* RFWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWebViewController.m; sourceTree = "<group>"; };
+		5C750B3C1D476E7B00E20D84 /* shuaxin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuaxin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		5C750B011D475F2C00E20D84 /* RFWebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5C750B351D475F4C00E20D84 /* RFWebView */,
 				5C750B051D475F2C00E20D84 /* AppDelegate.h */,
 				5C750B061D475F2C00E20D84 /* AppDelegate.m */,
 				5C750B081D475F2C00E20D84 /* ViewController.h */,
@@ -138,6 +144,16 @@
 				5C750B291D475F2D00E20D84 /* Info.plist */,
 			);
 			path = RFWebViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		5C750B351D475F4C00E20D84 /* RFWebView */ = {
+			isa = PBXGroup;
+			children = (
+				5C750B3C1D476E7B00E20D84 /* shuaxin.png */,
+				5C750B391D475FB300E20D84 /* RFWebViewController.h */,
+				5C750B3A1D475FB300E20D84 /* RFWebViewController.m */,
+			);
+			path = RFWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +261,7 @@
 			files = (
 				5C750B121D475F2D00E20D84 /* LaunchScreen.storyboard in Resources */,
 				5C750B0F1D475F2D00E20D84 /* Assets.xcassets in Resources */,
+				5C750B3D1D476E7B00E20D84 /* shuaxin.png in Resources */,
 				5C750B0D1D475F2C00E20D84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C750B3B1D475FB300E20D84 /* RFWebViewController.m in Sources */,
 				5C750B0A1D475F2C00E20D84 /* ViewController.m in Sources */,
 				5C750B071D475F2C00E20D84 /* AppDelegate.m in Sources */,
 				5C750B041D475F2C00E20D84 /* main.m in Sources */,
