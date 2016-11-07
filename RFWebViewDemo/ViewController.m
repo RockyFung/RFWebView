@@ -26,10 +26,16 @@
     btn.backgroundColor = [UIColor grayColor];
     [btn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    
 }
 - (void)clickBtn:(UIButton *)btn{
     RFWebViewController *webVC = [[RFWebViewController alloc]init];
-    webVC.urlString = @"http://www.cocoachina.com";
+    webVC.webUrl = @"http://www.cocoachina.com";
+    webVC.titleLabel.text = @"cocoChina";
+    webVC.titleLabel.textColor = [UIColor redColor];
+    webVC.navigationBarColor = [UIColor cyanColor];
+    webVC.showRefreshBtn = YES;
     [self.navigationController pushViewController:webVC animated:YES];
 }
 
